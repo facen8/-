@@ -395,19 +395,55 @@ h1 { max-width: 900px; margin-bottom: 24px; font-size: clamp(44px, 7vw, 88px); l
     background: rgba(7, 7, 7, 0.96);
   }
   .nav.open { display: grid; }
-  .hero { min-height: 840px; }
+  .hero { min-height: 640px; }
   .stats-band, .split-panel, .method-grid, .risk-grid, .route-cards, .table-row, .site-footer {
     display: grid;
     grid-template-columns: 1fr;
   }
   .flow, .metric-row { grid-template-columns: 1fr; }
+  .section { padding-top: 48px; }
+  .page-hero { padding: 48px 0 12px; }
+  .exchange-hero {
+    margin-top: 18px;
+    padding: 44px 24px 28px;
+  }
+  .article-stack { gap: 14px; }
+  .article-block { padding: 24px; }
 }
 
 @media (max-width: 560px) {
   .brand span:last-child { font-size: 14px; }
-  .hero { padding: 118px 22px 64px; }
-  h1 { font-size: 42px; }
+  .hero { min-height: 585px; padding: 96px 22px 24px; }
+  h1 { font-size: 36px; line-height: 1.03; }
+  .hero-copy { margin-bottom: 24px; font-size: 16px; line-height: 1.68; }
+  .hero-actions { gap: 10px; }
   .button { width: 100%; }
+  .stats-band { margin-top: -8px; }
+  .stats-band > div { padding: 20px 24px; }
   .section, .page-hero, .stats-band, .site-footer { width: calc(100% - 36px); }
+  .section { padding-top: 30px; }
+  .section-heading h2,
+  .split-panel h2,
+  .page-hero h1 { font-size: 36px; line-height: 1.05; }
+  .page-hero p { font-size: 16px; line-height: 1.65; }
+  .subpage { padding-top: 72px; }
+  .page-hero { padding: 28px 0 4px; }
+  .exchange-hero {
+    width: calc(100% - 36px);
+    min-height: 0;
+    padding: 34px 24px 26px;
+  }
+  .source-links { margin-top: 14px; gap: 10px; }
+  .source-links a { padding: 9px 12px; }
+  .toc { gap: 4px; padding: 12px; }
+  .toc a { padding: 8px 10px; }
+  .article-block h2 { font-size: 25px; }
+  .faq-layout { padding-top: 18px; }
+  .accordion { margin-top: 6px; }
+  .accordion-item { min-height: 58px; font-size: 19px; }
   .page-grid, .prep-grid, .toc, .path-steps, .glossary-grid { grid-template-columns: 1fr; }
+  .page-card,
+  .prep-grid article,
+  .path-steps div,
+  .glossary-grid div { min-height: 0; padding: 22px; }
 }
