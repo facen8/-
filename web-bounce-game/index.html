@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+    <title>弹力球挑战</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hud" aria-label="游戏状态">
+        <div>
+          <span class="hud-label">当前速度</span>
+          <strong id="speed">100.00%</strong>
+        </div>
+        <div>
+          <span class="hud-label">加速规则</span>
+          <strong id="boost">+1%/秒</strong>
+        </div>
+        <div>
+          <span class="hud-label">总坚持</span>
+          <strong id="score">0:00</strong>
+        </div>
+      </section>
+
+      <section class="arena-wrap" aria-label="弹力球游戏区域">
+        <canvas id="game" width="760" height="520"></canvas>
+        <div class="touch-zones" aria-hidden="true">
+          <span>左</span>
+          <span>右</span>
+        </div>
+        <div class="overlay is-visible" id="overlay">
+          <h1>弹力球挑战</h1>
+          <p id="message">坚持越久，速度越快。</p>
+          <form class="name-form" id="name-form" autocomplete="off">
+            <label for="winner-name">获胜者名字</label>
+            <div>
+              <input id="winner-name" name="winner-name" maxlength="14" placeholder="输入名字">
+              <button type="submit">保存排名</button>
+            </div>
+          </form>
+          <button id="start" type="button">开始游戏</button>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="控制按钮">
+        <button id="left" type="button" aria-label="向左移动">←</button>
+        <button id="pause" type="button">暂停</button>
+        <button id="right" type="button" aria-label="向右移动">→</button>
+      </section>
+
+      <section class="leaderboard" aria-label="排行榜">
+        <div class="leaderboard-head">
+          <h2>排行榜</h2>
+          <span>前 10 名</span>
+        </div>
+        <ol id="leaderboard-list"></ol>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
