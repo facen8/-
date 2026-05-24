@@ -1,6 +1,14 @@
-const accordionButtons = document.querySelectorAll(".accordion-item");
+const menuButton = document.querySelector(".menu-button");
+const nav = document.querySelector(".nav");
 
-accordionButtons.forEach((button) => {
+if (menuButton && nav) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+  });
+}
+
+document.querySelectorAll(".accordion-item").forEach((button) => {
   button.addEventListener("click", () => {
     const panel = button.nextElementSibling;
     const isOpen = button.getAttribute("aria-expanded") === "true";

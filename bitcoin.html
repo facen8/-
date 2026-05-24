@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>比特币详解 | 比特币全景指南</title>
+    <meta name="description" content="系统介绍比特币的起源、区块链、工作量证明、减半、钱包和节点。" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">B</span><span>比特币全景指南</span></a>
+      <button class="menu-button" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="主要导航">
+        <a class="active" href="bitcoin.html">比特币详解</a>
+        <a href="exchanges.html">交易所入门</a>
+        <a href="binance.html">币安教程</a>
+        <a href="okx.html">欧易教程</a>
+        <a href="security.html">安全与风险</a>
+      </nav>
+    </header>
+
+    <main class="subpage">
+      <section class="page-hero">
+        <p class="eyebrow">Bitcoin Basics</p>
+        <h1>比特币到底是什么？</h1>
+        <p>比特币是一套点对点电子现金系统。它通过公开账本、密码学签名、工作量证明和经济激励，让陌生人之间可以共同维护一份可验证的交易历史。</p>
+      </section>
+
+      <section class="section content-layout">
+        <aside class="toc">
+          <a href="#origin">起源</a>
+          <a href="#ledger">账本</a>
+          <a href="#mining">挖矿</a>
+          <a href="#supply">供应</a>
+          <a href="#wallet">钱包</a>
+        </aside>
+        <div class="article-stack">
+          <article id="origin" class="article-block">
+            <h2>1. 起源：为什么需要比特币</h2>
+            <p>2008 年，中本聪发布比特币白皮书，目标是建立一种不依赖中心清算机构的电子现金。它解决的核心问题是：如何防止同一笔数字资产被重复花费。</p>
+            <p>传统支付依赖银行、支付公司或清算网络来确认余额。比特币把这件事改成由全网节点共同验证，每个人都能检查规则是否被遵守。</p>
+          </article>
+          <article id="ledger" class="article-block">
+            <h2>2. 区块链：公开但不可随意改写的账本</h2>
+            <p>比特币交易会被打包进区块，区块按时间顺序连接。每个区块都包含前一个区块的哈希，形成一条可追溯的链。</p>
+            <div class="flow">
+              <span>交易签名</span><span>节点验证</span><span>矿工打包</span><span>区块确认</span><span>账本更新</span>
+            </div>
+          </article>
+          <article id="mining" class="article-block">
+            <h2>3. 挖矿：用算力争夺记账权</h2>
+            <p>矿工不断计算区块哈希，寻找满足当前难度的结果。成功出块后，矿工获得区块奖励和交易手续费。这个过程被称为工作量证明。</p>
+            <p>工作量证明让篡改历史记录非常昂贵，因为攻击者不仅要重算目标区块，还要追上全网后续区块的累积工作量。</p>
+          </article>
+          <article id="supply" class="article-block">
+            <h2>4. 供应：总量和减半</h2>
+            <p>比特币最大供应量约为 2100 万枚。新区块奖励大约每四年减半，新增供应速度逐步下降。减半影响的是发行速度，不等于价格保证。</p>
+            <div class="metric-row">
+              <div><strong>21M</strong><span>最大供应量</span></div>
+              <div><strong>4年</strong><span>约每四年减半</span></div>
+              <div><strong>BTC</strong><span>网络原生单位</span></div>
+            </div>
+          </article>
+          <article id="wallet" class="article-block">
+            <h2>5. 钱包：你真正保管的是私钥</h2>
+            <p>比特币并不存放在钱包软件里，而是记录在链上。钱包保存私钥或助记词，用来签名交易。谁控制私钥，谁就能控制对应资产。</p>
+            <p>交易所账户适合购买和短期操作；长期保管通常要学习自托管钱包、硬件钱包和助记词备份。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>比特币全景指南</p><span>教育科普用途，不构成投资建议。</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

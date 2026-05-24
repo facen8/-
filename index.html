@@ -4,25 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>比特币全景指南</title>
-    <meta
-      name="description"
-      content="一个面向普通读者的比特币科普网站，介绍比特币的起源、工作原理、供应机制、安全实践和常见误区。"
-    />
+    <meta name="description" content="比特币科普、交易所入门、币安与欧易购买教程，以及钱包安全与风险提醒。" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="返回首页">
-        <span class="brand-mark">B</span>
-        <span>比特币全景指南</span>
-      </a>
+      <a class="brand" href="index.html"><span class="brand-mark">B</span><span>比特币全景指南</span></a>
+      <button class="menu-button" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
       <nav class="nav" aria-label="主要导航">
-        <a href="#principles">原理</a>
-        <a href="#supply">供应</a>
-        <a href="#security">安全</a>
-        <a href="#timeline">时间线</a>
+        <a href="bitcoin.html">比特币详解</a>
+        <a href="exchanges.html">交易所入门</a>
+        <a href="binance.html">币安教程</a>
+        <a href="okx.html">欧易教程</a>
+        <a href="security.html">安全与风险</a>
       </nav>
-      <a class="nav-action" href="#glossary">术语表</a>
     </header>
 
     <main id="top">
@@ -30,220 +25,81 @@
         <img class="hero-image" src="assets/bitcoin-hero.png" alt="比特币与区块链网络的视觉化横幅" />
         <div class="hero-shade"></div>
         <div class="hero-content">
-          <p class="eyebrow">Decentralized Digital Money</p>
-          <h1>用一页网站，看懂比特币的核心逻辑</h1>
+          <p class="eyebrow">Bitcoin Learning Hub</p>
+          <h1>从原理到购买流程，系统看懂比特币</h1>
           <p class="hero-copy">
-            比特币是一套公开、去中心化、总量有限的数字货币网络。它把密码学、点对点网络和经济激励结合起来，让价值可以在没有中心机构的情况下转移和验证。
+            这里把比特币的技术逻辑、交易所开户、买入流程、钱包保管和常见风险拆成清晰页面，适合第一次接触数字资产的读者。
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#principles">了解工作原理</a>
-            <a class="button ghost" href="#security">查看安全要点</a>
+            <a class="button primary" href="bitcoin.html">先理解比特币</a>
+            <a class="button ghost" href="exchanges.html">查看购买入口</a>
           </div>
         </div>
       </section>
 
       <section class="stats-band" aria-label="比特币核心特征">
-        <div>
-          <span class="stat-value">2100万</span>
-          <span class="stat-label">最大供应量</span>
+        <div><span class="stat-value">2100万</span><span class="stat-label">协议最大供应量</span></div>
+        <div><span class="stat-value">约10分钟</span><span class="stat-label">平均出块时间</span></div>
+        <div><span class="stat-value">公开账本</span><span class="stat-label">全网可验证</span></div>
+        <div><span class="stat-value">私钥控制</span><span class="stat-label">资产归属核心</span></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading wide">
+          <p class="eyebrow">Site Map</p>
+          <h2>按学习顺序浏览</h2>
+          <p>先理解比特币是什么，再学习中心化交易所如何完成注册、身份认证、充值或直接购买，最后回到安全保管和风险控制。</p>
         </div>
-        <div>
-          <span class="stat-value">约10分钟</span>
-          <span class="stat-label">平均出块时间</span>
-        </div>
-        <div>
-          <span class="stat-value">点对点</span>
-          <span class="stat-label">网络架构</span>
-        </div>
-        <div>
-          <span class="stat-value">公开账本</span>
-          <span class="stat-label">交易可验证</span>
+        <div class="page-grid">
+          <a class="page-card" href="bitcoin.html">
+            <span>01</span>
+            <h3>比特币详解</h3>
+            <p>白皮书、区块链、工作量证明、减半、节点和钱包的核心概念。</p>
+          </a>
+          <a class="page-card" href="exchanges.html">
+            <span>02</span>
+            <h3>交易所入门</h3>
+            <p>购买前准备、KYC、支付方式、现货交易和提币的基本路径。</p>
+          </a>
+          <a class="page-card" href="binance.html">
+            <span>03</span>
+            <h3>币安注册与购买</h3>
+            <p>从官网核验、注册、身份认证，到卡买币、充值和现货买 BTC。</p>
+          </a>
+          <a class="page-card" href="okx.html">
+            <span>04</span>
+            <h3>欧易注册与购买</h3>
+            <p>从 OKX 官方入口、开户注册、验证，到快捷买币和现货购买。</p>
+          </a>
+          <a class="page-card" href="security.html">
+            <span>05</span>
+            <h3>安全与风险</h3>
+            <p>2FA、防钓鱼、提币白名单、冷钱包、税务记录和诈骗识别。</p>
+          </a>
         </div>
       </section>
 
-      <section class="section intro">
-        <div class="section-heading">
-          <p class="eyebrow">What Bitcoin Is</p>
-          <h2>它不是一家公司，而是一套开放协议</h2>
-        </div>
-        <div class="intro-grid">
-          <article>
-            <h3>货币层</h3>
-            <p>比特币网络中的单位是 BTC。用户通过钱包控制私钥，私钥可以授权转账，网络节点负责验证交易是否符合规则。</p>
-          </article>
-          <article>
-            <h3>结算层</h3>
-            <p>交易被打包进区块，区块按时间连接成区块链。每个节点都可以保存和验证账本，因此不必依赖单一机构确认余额。</p>
-          </article>
-          <article>
-            <h3>激励层</h3>
-            <p>矿工投入算力参与工作量证明，成功出块可获得区块奖励和手续费。经济激励帮助网络持续运行。</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="principles" class="section split">
-        <div class="section-heading">
-          <p class="eyebrow">How It Works</p>
-          <h2>比特币如何在没有中心银行的情况下运转</h2>
+      <section class="section split-panel">
+        <div>
+          <p class="eyebrow">Before Buying</p>
+          <h2>购买教程不是投资建议</h2>
           <p>
-            比特币的关键不是“神秘代码”，而是一组人人可验证的规则：交易签名、节点验证、区块排序、工作量证明和最长有效链。
+            本站只说明常见操作流程。比特币价格波动剧烈，交易所服务也会因地区、身份认证、监管要求和支付渠道而变化。
+            下单前请确认当地法律、平台条款和自己的风险承受能力。
           </p>
         </div>
-        <div class="feature-list">
-          <div class="feature">
-            <span class="feature-icon">01</span>
-            <div>
-              <h3>私钥签名</h3>
-              <p>钱包用私钥对交易进行签名，证明你有权花费对应的比特币，而不需要把私钥交给任何人。</p>
-            </div>
-          </div>
-          <div class="feature">
-            <span class="feature-icon">02</span>
-            <div>
-              <h3>节点验证</h3>
-              <p>节点检查交易格式、签名、余额和区块规则。无效交易不会被诚实节点接受。</p>
-            </div>
-          </div>
-          <div class="feature">
-            <span class="feature-icon">03</span>
-            <div>
-              <h3>工作量证明</h3>
-              <p>矿工通过计算寻找满足难度要求的区块哈希。这个过程让篡改历史记录变得极其昂贵。</p>
-            </div>
-          </div>
-          <div class="feature">
-            <span class="feature-icon">04</span>
-            <div>
-              <h3>全网共识</h3>
-              <p>节点遵循同一套规则，选择累积工作量最高的有效链，从而形成共同认可的交易历史。</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="supply" class="section supply-section">
-        <div class="section-heading compact">
-          <p class="eyebrow">Scarcity</p>
-          <h2>为什么人们常说比特币“稀缺”</h2>
-          <p>比特币的发行节奏写在协议规则里：新区块奖励大约每四年减半，直到总量接近 2100 万枚。</p>
-        </div>
-        <div class="halving-panel">
-          <div class="supply-ring" aria-hidden="true">
-            <span>21M</span>
-          </div>
-          <div class="halving-copy">
-            <h3>减半机制</h3>
-            <p>早期每个区块奖励为 50 BTC，之后逐步减半。减半不会保证价格上涨，但它确实改变了新增供应的速度。</p>
-          </div>
-          <div class="supply-note">
-            <strong>重要提醒</strong>
-            <span>稀缺性不等于低风险。比特币价格波动大，理解机制不能替代风险评估。</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="security" class="section security">
-        <div class="section-heading">
-          <p class="eyebrow">Security</p>
-          <h2>持有比特币时，真正重要的是私钥管理</h2>
-        </div>
-        <div class="security-grid">
-          <article class="security-card">
-            <h3>钱包不是存币罐</h3>
-            <p>比特币记录在链上，钱包保存的是能控制资产的私钥或助记词。丢失私钥，通常无法找回。</p>
-          </article>
-          <article class="security-card">
-            <h3>热钱包与冷钱包</h3>
-            <p>热钱包适合小额和频繁使用；冷钱包适合长期保管，但需要妥善备份助记词和设备恢复流程。</p>
-          </article>
-          <article class="security-card">
-            <h3>交易不可轻易撤销</h3>
-            <p>地址填错、被骗转账或泄露私钥后，链上交易通常无法像银行卡付款那样申请撤回。</p>
-          </article>
-          <article class="security-card">
-            <h3>警惕收益承诺</h3>
-            <p>“保本高收益”“代挖矿”“稳赚套利”等话术常见于诈骗。比特币网络本身不会承诺收益。</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="timeline" class="section timeline-section">
-        <div class="section-heading compact">
-          <p class="eyebrow">Timeline</p>
-          <h2>关键发展节点</h2>
-        </div>
-        <ol class="timeline">
-          <li>
-            <time>2008</time>
-            <p>署名中本聪的白皮书发布，提出点对点电子现金系统。</p>
-          </li>
-          <li>
-            <time>2009</time>
-            <p>创世区块被挖出，比特币网络正式启动。</p>
-          </li>
-          <li>
-            <time>2012-2024</time>
-            <p>多次区块奖励减半发生，新增供应速度持续下降。</p>
-          </li>
-          <li>
-            <time>今天</time>
-            <p>比特币仍在全球节点、矿工、开发者、钱包和交易服务的生态中运行。</p>
-          </li>
-        </ol>
-      </section>
-
-      <section class="section myths">
-        <div class="section-heading compact">
-          <p class="eyebrow">Myths</p>
-          <h2>几个常见误区</h2>
-        </div>
-        <div class="accordion">
-          <button class="accordion-item" aria-expanded="false">
-            <span>比特币是完全匿名的吗？</span>
-            <small>+</small>
-          </button>
-          <div class="accordion-panel">
-            <p>不是。比特币地址不直接显示真实姓名，但链上交易公开可查。如果地址与身份关联，历史交易也可能被分析。</p>
-          </div>
-          <button class="accordion-item" aria-expanded="false">
-            <span>区块链记录能随便修改吗？</span>
-            <small>+</small>
-          </button>
-          <div class="accordion-panel">
-            <p>普通用户不能随意修改已确认记录。想重写历史需要控制大量算力并持续赶超网络，成本和难度很高。</p>
-          </div>
-          <button class="accordion-item" aria-expanded="false">
-            <span>学习比特币等于建议购买吗？</span>
-            <small>+</small>
-          </button>
-          <div class="accordion-panel">
-            <p>不是。本网站用于科普机制和风险，不构成投资建议。是否参与需要基于个人风险承受能力和当地规则判断。</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="glossary" class="section glossary">
-        <div class="section-heading compact">
-          <p class="eyebrow">Glossary</p>
-          <h2>快速术语表</h2>
-        </div>
-        <div class="glossary-grid">
-          <div><strong>私钥</strong><span>控制比特币的密码学凭证。</span></div>
-          <div><strong>助记词</strong><span>用于备份和恢复钱包的一组词。</span></div>
-          <div><strong>节点</strong><span>验证交易和区块规则的软件实例。</span></div>
-          <div><strong>矿工</strong><span>投入算力竞争出块并维护网络安全的参与者。</span></div>
-          <div><strong>哈希</strong><span>把数据映射为固定长度指纹的算法结果。</span></div>
-          <div><strong>手续费</strong><span>用户为交易被打包进区块支付的费用。</span></div>
+        <div class="checklist">
+          <div><strong>只用官方网站</strong><span>不要从陌生短信、群聊链接或搜索广告直接登录交易所。</span></div>
+          <div><strong>先做小额测试</strong><span>首次充值、购买、提币都建议用小金额确认路径正确。</span></div>
+          <div><strong>保护私钥和账户</strong><span>开启双重验证，助记词不截图、不上传云盘、不发给任何人。</span></div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <p>比特币全景指南</p>
-      <span>仅作教育科普，不构成投资、法律或税务建议。</span>
+      <span>教育科普用途，不构成投资、法律或税务建议。</span>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
