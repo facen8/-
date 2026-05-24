@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>比特币全景指南</title>
     <meta name="description" content="比特币科普、交易所入门、币安与欧易购买教程，以及钱包安全与风险提醒。" />
-    <link rel="stylesheet" href="style.css?v=mobile3" />
+    <link rel="stylesheet" href="style.css?v=mobile4" />
   </head>
   <body>
     <header class="site-header">
@@ -39,10 +39,60 @@
       </section>
 
       <section class="stats-band" aria-label="比特币核心特征">
-        <div><span class="stat-value">2100万</span><span class="stat-label">协议最大供应量</span></div>
-        <div><span class="stat-value">约10分钟</span><span class="stat-label">平均出块时间</span></div>
-        <div><span class="stat-value">公开账本</span><span class="stat-label">全网可验证</span></div>
-        <div><span class="stat-value">私钥控制</span><span class="stat-label">资产归属核心</span></div>
+        <a href="#supply-cap"><span class="stat-value">2100万</span><span class="stat-label">协议最大供应量</span></a>
+        <a href="#block-time"><span class="stat-value">约10分钟</span><span class="stat-label">平均出块时间</span></a>
+        <a href="#public-ledger"><span class="stat-value">公开账本</span><span class="stat-label">全网可验证</span></a>
+        <a href="#private-key"><span class="stat-value">私钥控制</span><span class="stat-label">资产归属核心</span></a>
+      </section>
+
+      <section class="section concept-section" aria-labelledby="concept-title">
+        <div class="section-heading wide">
+          <p class="eyebrow">Core Concepts</p>
+          <h2 id="concept-title">四个数字背后的比特币逻辑</h2>
+          <p>这四项不是宣传口号，而是比特币协议如何运行、如何验证、如何归属资产的关键入口。</p>
+        </div>
+        <div class="concept-grid">
+          <article id="supply-cap" class="concept-card">
+            <span class="concept-kicker">01 / Supply</span>
+            <h3>2100万：协议写死的最大供应量</h3>
+            <p>
+              比特币的发行规则由协议决定，最终总量约为 2100 万枚。新币通过区块奖励产生，而区块奖励会按固定节奏减半，所以新增供应会越来越少。
+            </p>
+            <p>
+              这不代表价格一定上涨，也不代表没有波动风险。它真正重要的地方在于：任何人都可以运行节点检查发行规则，不能由某个公司或个人随意增发。
+            </p>
+          </article>
+          <article id="block-time" class="concept-card">
+            <span class="concept-kicker">02 / Block Time</span>
+            <h3>约10分钟：网络平均出块时间</h3>
+            <p>
+              比特币大约每 10 分钟产生一个新区块，把一批交易写入链上。这里说的是长期平均值，实际某个区块可能更快，也可能更慢。
+            </p>
+            <p>
+              网络会定期调整挖矿难度，让整体出块速度回到目标附近。对普通用户来说，出块和确认数会影响到账等待时间，尤其是链上转账和提币。
+            </p>
+          </article>
+          <article id="public-ledger" class="concept-card">
+            <span class="concept-kicker">03 / Ledger</span>
+            <h3>公开账本：全网都能验证</h3>
+            <p>
+              比特币账本是公开的，交易、区块和地址余额都可以被独立查询。公开不等于实名，但链上记录一旦留下，就会长期可追溯。
+            </p>
+            <p>
+              公开账本的价值在于可验证：节点会检查交易签名、余额、区块规则和发行上限。你不必只相信平台展示的数据，也可以自己核验链上状态。
+            </p>
+          </article>
+          <article id="private-key" class="concept-card">
+            <span class="concept-kicker">04 / Ownership</span>
+            <h3>私钥控制：资产归属的核心</h3>
+            <p>
+              比特币不是存在某个钱包软件里，而是记录在链上。钱包真正保管的是私钥或助记词，它们用来签名交易，证明你有权移动对应地址里的资产。
+            </p>
+            <p>
+              谁控制私钥，谁就能控制资产。交易所账户适合新手购买和短期操作，但长期持有应学习自托管、硬件钱包和离线备份，避免把助记词截图或上传云盘。
+            </p>
+          </article>
+        </div>
       </section>
 
       <section class="section">
